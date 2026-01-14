@@ -18,7 +18,7 @@ const Index = () => {
       <Navbar />
       <main>
         {heroVariant === "demo2" ? <HeroSectionDemo2 /> : <HeroSection />}
-        <WhatBringsYouSection />
+        {/* <WhatBringsYouSection /> */}
         <AboutSection />
         <ServicesSection />
         <PortfolioSection />

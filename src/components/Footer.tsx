@@ -48,13 +48,14 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex flex-col mb-5">
-              <span className="text-[10px] font-semibold tracking-[0.2em] text-muted-foreground uppercase">
-                Samadhan
-              </span>
-              <span className="text-2xl font-display font-bold text-background">
-                digitech<span className="text-accent">!</span>
-              </span>
+            <div className="mb-5">
+              <Link to="/" className="flex items-center">
+                <img 
+                  src="/favicon-dark.png" 
+                  alt="Samadhan Digitech Logo" 
+                  className="h-12 w-12 md:h-16 md:w-16 object-contain"
+                />
+              </Link>
             </div>
             <p className="text-muted-foreground mb-5 max-w-sm text-sm">
               A leading creative-tech agency delivering solutions that shape industries

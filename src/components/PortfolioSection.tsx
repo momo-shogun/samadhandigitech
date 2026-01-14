@@ -3,59 +3,22 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import workData from "@/data/workData.json";
 
-const categories = ["Food & Beverage", "Government", "Corporate", "Startups", "And Many More"];
+const { categories: allCategories, projects: allProjects } = workData;
 
-const projects = [
-  {
-    id: 1,
-    title: "Lakhpati Didi",
-    category: "Government",
-    client: "MoRD",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop",
-    type: "Documentary Film",
-  },
-  {
-    id: 2,
-    title: "CSIR 75 Years Journey",
-    category: "Government",
-    client: "CSIR",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop",
-    type: "Documentary",
-  },
-  {
-    id: 3,
-    title: "Brand Campaign",
-    category: "Brands",
-    client: "Burger Singh",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
-    type: "Ad Film",
-  },
-  {
-    id: 4,
-    title: "Digital Transformation",
-    category: "Corporate",
-    client: "Jaipur Rugs",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-    type: "Documentary",
-  },
-  {
-    id: 5,
-    title: "Khadi India Campaign",
-    category: "Government",
-    client: "Khadi India",
-    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=400&fit=crop",
-    type: "National Campaign",
-  },
-  {
-    id: 6,
-    title: "G20 Summit Coverage",
-    category: "Government",
-    client: "G20 India",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
-    type: "Event Coverage",
-  },
-];
+// Filter categories for PortfolioSection (exclude "All")
+const categories = allCategories.filter((cat) => cat !== "All");
+
+// Sort projects by priority (priority: 1 first, then others), then get first 8
+const sortedProjects = [...allProjects].sort((a, b) => {
+  const aPriority = a.priority || 0;
+  const bPriority = b.priority || 0;
+  return bPriority - aPriority; // Higher priority first
+});
+
+// Get featured projects (prioritized ones first, up to 8 projects)
+const projects = sortedProjects.slice(0, 8);
 
 export function PortfolioSection() {
   const ref = useRef(null);
@@ -146,9 +109,13 @@ export function PortfolioSection() {
 
                 {/* Content */}
                 <div className="space-y-1">
-                  <p className="text-sm text-muted-foreground">
-                    {project.client} • {project.type}
-                  </p>
+                  {(project.client || project.type) && (
+                    <p className="text-sm text-muted-foreground">
+                      {project.client ? `${project.client}` : ""}
+                      {project.client && project.type ? " • " : ""}
+                      {project.type ? project.type : ""}
+                    </p>
+                  )}
                   <h3 className="text-xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>

@@ -7,110 +7,16 @@ import { CTASection } from "@/components/CTASection";
 import { Play, ArrowRight, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import workData from "@/data/workData.json";
 
-const categories = ["All", "Government", "Brands", "Corporate", "Media Production", "Digital Marketing"];
+const { categories, projects: allProjects } = workData;
 
-const projects = [
-  {
-    id: 1,
-    title: "Documentary Film - Skill India",
-    category: "Government",
-    description: "Award-winning documentary showcasing India's skill development initiatives reaching over 10 million viewers.",
-    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
-    color: "bg-primary",
-    year: "2024",
-  },
-  {
-    id: 2,
-    title: "Brand Campaign - Leading FMCG",
-    category: "Brands",
-    description: "360° integrated marketing campaign that increased brand recall by 45% and drove significant sales growth.",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
-    color: "bg-accent",
-    year: "2024",
-  },
-  {
-    id: 3,
-    title: "Corporate AV - MNC Annual Report",
-    category: "Corporate",
-    description: "Premium annual report video for Fortune 500 company showcasing global operations and achievements.",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
-    color: "bg-purple",
-    year: "2023",
-  },
-  {
-    id: 4,
-    title: "Social Media Campaign",
-    category: "Digital Marketing",
-    description: "Viral social media campaign reaching 10M+ audience with 5x engagement rate improvement.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    color: "bg-pink",
-    year: "2024",
-  },
-  {
-    id: 5,
-    title: "E-Governance Portal",
-    category: "Government",
-    description: "Citizen-centric e-governance platform serving millions of users across multiple states.",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
-    color: "bg-secondary",
-    year: "2023",
-  },
-  {
-    id: 6,
-    title: "Enterprise ERP Solution",
-    category: "Corporate",
-    description: "Custom ERP solution for manufacturing giant streamlining operations across 20+ locations.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
-    color: "bg-primary",
-    year: "2023",
-  },
-  {
-    id: 7,
-    title: "Television Commercial",
-    category: "Media Production",
-    description: "High-impact TV commercial for national brand achieving 40% ad recall rate.",
-    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop",
-    color: "bg-accent",
-    year: "2024",
-  },
-  {
-    id: 8,
-    title: "Performance Marketing",
-    category: "Digital Marketing",
-    description: "ROI-focused digital marketing campaign delivering 300% return on ad spend.",
-    image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&h=600&fit=crop",
-    color: "bg-purple",
-    year: "2024",
-  },
-  {
-    id: 9,
-    title: "Corporate Documentary",
-    category: "Media Production",
-    description: "In-depth corporate documentary capturing 25 years of company history and evolution.",
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
-    color: "bg-pink",
-    year: "2023",
-  },
-  {
-    id: 10,
-    title: "Instant Funds",
-    category: "Digital Marketing",
-    description: "Performance marketing and ASO strategy for RBI-compliant personal loan app, achieving 3.2x visibility increase, 68% Play Store growth, and 42% lower CPA through trust-led, compliance-first campaigns.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    color: "bg-highlight",
-    year: "2024",
-  },
-  {
-    id: 11,
-    title: "Technomatic Industries",
-    category: "Digital Marketing",
-    description: "Social media marketing and lead generation strategy for industrial machinery manufacturer, generating 700+ qualified leads in 2 months through strategic Instagram, Facebook, and LinkedIn campaigns.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-    color: "bg-accent",
-    year: "2024",
-  },
-];
+// Sort projects by priority (priority: 1 first, then others)
+const sortedProjects = [...allProjects].sort((a, b) => {
+  const aPriority = a.priority || 0;
+  const bPriority = b.priority || 0;
+  return bPriority - aPriority; // Higher priority first
+});
 
 const OurWork = () => {
   const ref = useRef(null);
@@ -119,8 +25,8 @@ const OurWork = () => {
 
   const filteredProjects =
     activeCategory === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      ? sortedProjects
+      : sortedProjects.filter((p) => p.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">

@@ -1,0 +1,346 @@
+{
+  "categories": [
+    "All",
+    "Food & Beverage",
+    "Government",
+    "Corporate",
+    "Brands",
+    "Startups",
+    "Media Production",
+    "Digital Marketing"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Lakhpati Didi",
+      "category": "Government",
+      "client": "MoRD",
+      "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop",
+      "type": "Documentary Film",
+      "description": "Award-winning documentary showcasing India's skill development initiatives reaching over 10 million viewers.",
+      "color": "bg-primary",
+      "year": "2024",
+      "challenge": "Showcase a nationwide movement inspiring 2 crore+ women.",
+      "approach": "A docu-style film mixing real-life stories, PM's bytes, SHG women testimonials.",
+      "result": "Reached 10 crore+ viewers across platforms; recognized as a flagship initiative film."
+    },
+    {
+      "id": 2,
+      "title": "CSIR 75 Years Journey",
+      "category": "Government",
+      "client": "CSIR",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop",
+      "type": "Documentary",
+      "description": "Comprehensive documentary celebrating 75 years of CSIR's contributions to science and technology.",
+      "color": "bg-primary",
+      "year": "2024",
+      "challenge": "Present 75 years of innovation in 12 minutes for a global audience.",
+      "approach": "Archival + cinematic recreations + leadership testimonials.",
+      "result": "Screened at global science forums; adopted across CSIR network."
+    },
+    {
+      "id": 3,
+      "title": "Brand Campaign",
+      "category": "Brands",
+      "client": "Burger Singh",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+      "type": "Ad Film",
+      "description": "360° integrated marketing campaign that increased brand recall by 45% and drove significant sales growth.",
+      "color": "bg-accent",
+      "year": "2024",
+      "challenge": "Position Burger Singh as India's leading homegrown QSR brand.",
+      "approach": "High-energy ad film blending humor, relatability, and brand recall.",
+      "result": "2M+ organic views; increase in customer engagement by 40%."
+    },
+    {
+      "id": 4,
+      "title": "Jaipur Rugs",
+      "category": "Corporate",
+      "client": "Jaipur Rugs",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+      "type": "Brand & Craft Storytelling",
+      "description": "Produced visual content that highlighted craftsmanship, heritage, and the human stories behind the brand. The films focused on authenticity, detail, and premium storytelling.",
+      "color": "bg-purple",
+      "year": "2023",
+      "services": [
+        "Brand film production",
+        "Craft & process storytelling",
+        "Cinematic visuals for digital use"
+      ],
+      "videoUrl": "https://youtu.be/IY0FhdlAMNo"
+    },
+    {
+      "id": 5,
+      "title": "Khadi India Campaign",
+      "category": "Government",
+      "client": "Khadi India",
+      "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=400&fit=crop",
+      "type": "National Campaign",
+      "description": "National campaign promoting Khadi and handloom products across India.",
+      "color": "bg-primary",
+      "year": "2024"
+    },
+    {
+      "id": 6,
+      "title": "G20 Summit",
+      "category": "Government",
+      "client": "Government of India",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
+      "type": "Event & Brand Films",
+      "description": "Supported the G20 ecosystem with on-ground video production and event coverage for one of the world's most high-stakes global summits. Our team captured key moments, official narratives, and large-scale execution with precision and speed—aligned with government protocols and global visibility standards.",
+      "color": "bg-primary",
+      "year": "2024",
+      "services": [
+        "Event coverage & on-ground production",
+        "High-impact short films & documentation",
+        "Fast-turnaround edits for official communication"
+      ],
+      "videoUrl": "https://youtu.be/zIQfLuU_vdE",
+      "priority": 1
+    },
+    {
+      "id": 7,
+      "title": "Documentary Film - Skill India",
+      "category": "Government",
+      "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
+      "description": "Award-winning documentary showcasing India's skill development initiatives reaching over 10 million viewers.",
+      "color": "bg-primary",
+      "year": "2024"
+    },
+    {
+      "id": 8,
+      "title": "Brand Campaign - Leading FMCG",
+      "category": "Brands",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+      "description": "360° integrated marketing campaign that increased brand recall by 45% and drove significant sales growth.",
+      "color": "bg-accent",
+      "year": "2024"
+    },
+    {
+      "id": 9,
+      "title": "Corporate AV - MNC Annual Report",
+      "category": "Corporate",
+      "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
+      "description": "Premium annual report video for Fortune 500 company showcasing global operations and achievements.",
+      "color": "bg-purple",
+      "year": "2023"
+    },
+    {
+      "id": 10,
+      "title": "Social Media Campaign",
+      "category": "Digital Marketing",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "description": "Viral social media campaign reaching 10M+ audience with 5x engagement rate improvement.",
+      "color": "bg-pink",
+      "year": "2024"
+    },
+    {
+      "id": 11,
+      "title": "E-Governance Portal",
+      "category": "Government",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+      "description": "Citizen-centric e-governance platform serving millions of users across multiple states.",
+      "color": "bg-secondary",
+      "year": "2023"
+    },
+    {
+      "id": 12,
+      "title": "Enterprise ERP Solution",
+      "category": "Corporate",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+      "description": "Custom ERP solution for manufacturing giant streamlining operations across 20+ locations.",
+      "color": "bg-primary",
+      "year": "2023"
+    },
+    {
+      "id": 13,
+      "title": "Television Commercial",
+      "category": "Media Production",
+      "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop",
+      "description": "High-impact TV commercial for national brand achieving 40% ad recall rate.",
+      "color": "bg-accent",
+      "year": "2024"
+    },
+    {
+      "id": 14,
+      "title": "Performance Marketing",
+      "category": "Digital Marketing",
+      "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&h=600&fit=crop",
+      "description": "ROI-focused digital marketing campaign delivering 300% return on ad spend.",
+      "color": "bg-purple",
+      "year": "2024"
+    },
+    {
+      "id": 15,
+      "title": "Corporate Documentary",
+      "category": "Media Production",
+      "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
+      "description": "In-depth corporate documentary capturing 25 years of company history and evolution.",
+      "color": "bg-pink",
+      "year": "2023"
+    },
+    {
+      "id": 16,
+      "title": "Instant Funds",
+      "category": "Digital Marketing",
+      "client": "Instant Funds",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "type": "Performance Marketing & ASO",
+      "description": "Performance marketing and ASO strategy for RBI-compliant personal loan app, achieving 3.2x visibility increase, 68% Play Store growth, and 42% lower CPA through trust-led, compliance-first campaigns.",
+      "color": "bg-highlight",
+      "year": "2024",
+      "industry": "Fintech / Digital Lending",
+      "services": [
+        "Digital Marketing",
+        "Performance Marketing",
+        "ASO"
+      ],
+      "overview": "We partnered with Instant Funds, a personal loan app offering short-term loans via RBI-regulated banks and NBFCs, to improve visibility, trust, and high-intent user acquisition across India. The goal was to stand out in a crowded loan-app market by reaching users actively searching for instant and short-term loan solutions—especially across Tier 2 and Tier 3 cities.",
+      "challenge": "Low brand visibility despite RBI-compliant partnerships. High competition in the personal loan app ecosystem. Trust deficit among first-time digital loan users. Difficulty reaching high-intent users at scale.",
+      "approach": "1. Conducted fintech market & search-intent analysis. 2. Identified high-intent loan keywords and user behavior. 3. Implemented performance-driven acquisition campaigns. 4. Optimized Play Store presence for better discoverability. 5. Built compliance-first, trust-led messaging.",
+      "result": "3.2x increase in app visibility across high-intent search terms. +68% growth in Play Store organic discovery. 42% lower CPA through refined audience targeting. 2.5x increase in qualified app installs. Stronger trust perception as an RBI-compliant loan platform.",
+      "impact": "Instant Funds successfully positioned itself as a reliable, transparent, and compliant instant loan solution, achieving sustainable user growth while maintaining ethical and regulatory marketing standards.",
+      "priority": 1
+    },
+    {
+      "id": 17,
+      "title": "Technomatic Industries",
+      "category": "Digital Marketing",
+      "client": "Technomatic Industries",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+      "type": "Social Media Marketing & Lead Generation",
+      "description": "Social media marketing and lead generation strategy for industrial machinery manufacturer, generating 700+ qualified leads in 2 months through strategic Instagram, Facebook, and LinkedIn campaigns.",
+      "color": "bg-accent",
+      "year": "2024",
+      "industry": "Industrial Machinery / Manufacturing",
+      "services": [
+        "Social Media Marketing",
+        "Lead Generation",
+        "Digital Strategy"
+      ],
+      "overview": "Samadhan Digitech partnered with Technomatic Industries to strengthen their digital presence and generate high-quality business leads through strategic social media marketing. Our responsibility included end-to-end management of their Instagram, Facebook, and LinkedIn profiles with a clear focus on brand visibility, credibility, and lead generation.",
+      "challenge": "Limited digital visibility in a competitive industrial market. Low inbound leads from online platforms. Need to position the brand as a trusted and modern industrial solution provider. Platform-specific content requirements for B2B audiences.",
+      "approach": "1. Developed a structured social media strategy aligned with business goals. 2. Created platform-specific content for Instagram, Facebook, and LinkedIn. 3. Focused on industrial storytelling, product showcases, and trust-building content. 4. Implemented lead-focused campaigns and inquiry-driven creatives. 5. Maintained consistent posting, engagement, and optimization.",
+      "result": "Generated 700+ qualified leads in just 2 months. Significant increase in inbound inquiries across platforms. Improved brand visibility and engagement in the industrial segment. Strong growth in professional audience reach on LinkedIn. High client satisfaction and long-term collaboration.",
+      "impact": "Through a focused and performance-driven social media strategy, Technomatic Industries successfully transformed their digital platforms into powerful lead-generation channels. The brand is now positioned as a reliable and forward-thinking industrial partner, with consistent online visibility and measurable business outcomes.",
+      "priority": 1
+    },
+    {
+      "id": 18,
+      "title": "CM YUVA (Chief Minister Yuva Udyami Abhiyan)",
+      "category": "Government",
+      "client": "CM YUVA, Uttar Pradesh",
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=600&fit=crop",
+      "type": "Digital Marketing & Social Media",
+      "description": "Established and scaled CM YUVA's digital presence from zero, building official social media platforms to create widespread awareness about the youth entrepreneurship scheme across Uttar Pradesh.",
+      "color": "bg-primary",
+      "year": "2024",
+      "industry": "Government Initiative / Youth Entrepreneurship & Employment",
+      "services": [
+        "Social Media Optimization (SMO)",
+        "Social Media Marketing (SMM)",
+        "Content Strategy",
+        "Campaign & Event Promotion"
+      ],
+      "overview": "We partnered with CM YUVA (Chief Minister Yuva Udyami Abhiyan) to establish and scale its digital presence from the ground up, to create widespread awareness about the scheme, its benefits, and its impact on youth entrepreneurship across Uttar Pradesh. Starting from zero on 24th January, our mandate was to build official social media platforms that could inform, inspire, and mobilize the youth of the state—while positioning CM YUVA as a flagship, aspirational, and action-oriented government initiative.",
+      "objectives": [
+        "Launch and establish official CM YUVA social media pages from scratch",
+        "Rapidly build credibility and trust among youth and first-time entrepreneurs",
+        "Communicate scheme benefits, eligibility, and application process clearly",
+        "Inspire youth through success stories and real-world impact",
+        "Achieve large-scale organic reach and sustained follower growth"
+      ],
+      "challenge": "Zero initial digital footprint and audience base. Need for fast yet credible growth within an institutional framework. Communicating policy-driven information in an engaging, youth-friendly format. Reaching diverse audiences across urban and rural Uttar Pradesh. Maintaining consistency, accuracy, and dignity of government communication.",
+      "approach": "1. Zero-to-Scale Digital Foundation: Created and optimized Instagram and Facebook pages from inception. Defined clear content pillars aligned with CM YUVA's vision: Entrepreneurship awareness, Financial support & loan guidance, Youth success stories, Scheme updates and government messaging. Established a consistent visual and language identity. 2. High-Impact Content & Storytelling: Developed short-form video content to simplify and humanize the scheme. Produced reels focused on 'How CM YUVA works' explainers, Youth-centric motivational messaging, Real beneficiary stories and journeys, Application process and benefits. Balanced informational content with aspirational storytelling. 3. Reel-First Growth Strategy: Leveraged Instagram and Facebook reels for maximum organic reach. Designed content to align with trending formats while retaining institutional integrity. Focused on emotional resonance, relatability, and clarity. 4. Community Building & Engagement: Responded to comments and queries to build trust and participation. Used consistent call-to-action encouraging youth to apply and explore the scheme. Strengthened audience retention through recurring content formats.",
+      "result": "Instagram Growth: From 0 to 133,000+ followers since 24th January. Facebook Growth: From 0 to 98,000+ followers organically. High-Performance Content: 10+ reels crossed 500,000+ views, driving massive awareness and discoverability. Reach & Engagement: Millions of organic impressions across platforms. Strong engagement from youth, aspiring entrepreneurs, and institutions. Significant shareability across districts and regions.",
+      "impact": "CM YUVA's digital platforms rapidly evolved into a primary awareness and inspiration channel for youth entrepreneurship in Uttar Pradesh. The initiative is now widely recognized among young aspirants across the state, perceived as accessible, aspirational, and action-driven, able to communicate complex scheme details in a simple, relatable manner, and positioned as a catalyst for self-employment and economic empowerment.",
+      "conclusion": "By building CM YUVA's digital ecosystem from scratch and scaling it at unprecedented speed, we successfully transformed a government scheme into a youth-led digital movement. The strong follower growth, viral content performance, and sustained engagement demonstrate the effectiveness of a storytelling-driven, trust-first, and youth-centric digital strategy.",
+      "priority": 1
+    },
+    {
+      "id": 19,
+      "title": "ODOP (One District One Product)",
+      "category": "Government",
+      "client": "ODOP, Uttar Pradesh",
+      "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=600&fit=crop",
+      "type": "Digital Marketing & Social Media",
+      "description": "Strengthened ODOP's digital presence and amplified awareness around Uttar Pradesh's rich traditional crafts, indigenous products, artisans, and ODOP-led events through strategic social media optimization and content creation.",
+      "color": "bg-primary",
+      "year": "2024",
+      "industry": "Government Initiative / MSME & Handicrafts Promotion",
+      "services": [
+        "Social Media Optimization (SMO)",
+        "Social Media Marketing (SMM)",
+        "Event Coverage & Promotion"
+      ],
+      "overview": "We partnered with the ODOP (One District One Product) initiative to strengthen its digital presence and amplify awareness around Uttar Pradesh's rich traditional crafts, indigenous products, artisans, and ODOP-led events. The objective was to transform ODOP's social media platforms into a powerful storytelling and discovery channel—showcasing district-wise products, artisan journeys, government support mechanisms, and on-ground events—while driving sustained audience growth and engagement across Instagram and other digital touchpoints.",
+      "objectives": [
+        "Build strong digital visibility for ODOP as a flagship initiative of Uttar Pradesh",
+        "Increase awareness and appreciation of district-specific products and crafts",
+        "Promote ODOP exhibitions, fairs, conclaves, and official events",
+        "Drive consistent follower growth and high organic engagement",
+        "Position ODOP as a credible, vibrant, and people-centric government initiative"
+      ],
+      "challenge": "Limited initial social media reach and discoverability. Need for consistent, high-quality content across diverse product categories. Communicating cultural heritage in an engaging digital-first format. Covering multiple districts and events with timely, accurate storytelling. Standing out organically without over-reliance on paid promotions.",
+      "approach": "1. Strategic Social Media Optimization: Developed a structured content calendar aligned with ODOP goals. Optimized bio, highlights, captions, hashtags, and posting frequency. Maintained consistency in branding, tone, and visual identity. Focused on Hindi and bilingual communication to maximize reach. 2. High-Impact Content Creation: Created engaging reels, carousels, and static creatives highlighting district-wise ODOP products, artisan stories and craftsmanship, manufacturing processes and cultural relevance, government support, infrastructure, and schemes. Designed content to be informative, aspirational, and shareable. 3. Reel-Led Organic Growth Strategy: Leveraged short-form video content to maximize discoverability. Used trend-aligned formats while maintaining institutional dignity. Focused on storytelling-driven reels rather than promotional-only content. 4. Event Coverage & Promotion: Actively covered and promoted ODOP events including ODOP exhibitions and fairs, conclaves, expos, and government-led programs, artisan interactions and product showcases. Delivered pre-event promotions, live/on-ground event coverage, and post-event recap content. Ensured timely posting to amplify event reach and public engagement.",
+      "result": "Instagram follower growth: Increased from 1,700 to 8,336 followers organically. High-performing video content: 10+ reels crossed 200,000+ views, significantly boosting reach and visibility. Engagement uplift: Substantial increase in likes, shares, saves, and comments. Improved audience retention and repeat viewership. Brand visibility: ODOP content reached audiences beyond Uttar Pradesh. Strong resonance among youth, entrepreneurs, artisans, and institutions.",
+      "impact": "Through consistent optimization, storytelling-driven content, and strategic event promotion, ODOP's social media presence evolved from an informational page into an active digital movement.",
+      "conclusion": "ODOP's digital transformation successfully positioned the initiative as a vibrant showcase of Uttar Pradesh's cultural heritage and economic potential, driving meaningful engagement and awareness across diverse audiences.",
+      "priority": 1
+    },
+    {
+      "id": 20,
+      "title": "Bata India",
+      "category": "Brands",
+      "client": "Bata India",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=600&fit=crop",
+      "type": "Brand Video & Digital Content",
+      "description": "For Bata, a legacy global footwear brand, we produced digital-first video content that aligned with their modern retail and brand storytelling goals. The focus was on clean visuals, product-led narratives, and platform-ready formats.",
+      "color": "bg-accent",
+      "year": "2024",
+      "services": [
+        "Brand video production",
+        "Short-form digital content",
+        "Platform-optimised edits"
+      ],
+      "videoUrl": "https://youtu.be/YagGe7bTDT4",
+      "priority": 1
+    },
+    {
+      "id": 21,
+      "title": "Giani's Ice Cream",
+      "category": "Food & Beverage",
+      "client": "Giani's Ice Cream",
+      "image": "https://b.zmtcdn.com/data/pictures/chains/6/18774186/fc5fff1f41066a5d37db92daaf22d111.jpg?output-format=webp",
+      "type": "Social & Promotional Videos",
+      "description": "We created high-energy, short-form video content for Giani's, keeping in mind fast-scroll platforms and youth-centric consumption. The content was designed to be visually indulgent, fun, and instantly engaging.",
+      "color": "bg-pink",
+      "year": "2024",
+      "services": [
+        "Short-form video production",
+        "Social-first creative execution",
+        "Quick edits for high engagement"
+      ],
+      "videoUrl": "https://youtube.com/shorts/Iblj145vAro",
+      "priority": 1
+    },
+    {
+      "id": 22,
+      "title": "Dava India",
+      "category": "Corporate",
+      "client": "Dava India",
+      "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=600&fit=crop",
+      "type": "Corporate & Brand Video",
+      "description": "We worked with Dava India, India's largest private generic pharmacy chain, to produce clear, trust-led video content focused on scale, accessibility, and impact—aligned with their mass-reach business model.",
+      "color": "bg-purple",
+      "year": "2024",
+      "services": [
+        "Corporate & brand video production",
+        "Clear, informative storytelling",
+        "Digital-ready execution"
+      ],
+      "videoUrl": "https://youtu.be/iGxvDh2GAcE",
+      "priority": 1
+    }
+  ]
+}
