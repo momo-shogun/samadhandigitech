@@ -7,9 +7,9 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen pt-24 pb-16 overflow-hidden bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left Content */}
-          <div className="pt-8 lg:pt-16">
+          <div className="pt-8 lg:pt-16 h-full flex flex-col">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -88,14 +88,14 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative lg:pt-8 "
+            className="relative pt-8 lg:pt-16 h-full flex items-center"
           >
-            <div className="relative group ">
+            <div className="relative group w-full h-full flex items-center">
               {/* Decorative Background Elements */}
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Image Container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-muted/50 to-background border border-border/50 backdrop-blur-sm">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-muted/50 to-background border border-border/50 backdrop-blur-sm w-full h-full flex items-center justify-center">
                 {/* Loading Placeholder */}
                 <div className="absolute inset-0 bg-gradient-to-br from-muted/30 to-muted/10 animate-pulse" />
                 
@@ -103,7 +103,7 @@ export function HeroSection() {
                 <motion.img
                   src="/images/image-1.png"
                   alt="Samadhan Digitech - Digital Marketing & Technology Solutions"
-                  className="w-full h-auto  object-contain relative z-10"
+                  className="w-full h-full max-h-full max-w-full object-contain relative z-10"
                   initial={{ opacity: 0, scale: 1.05 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
