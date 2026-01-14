@@ -17,6 +17,29 @@ const specialData: Record<number, { gallery?: string[]; reels?: string[] }> = {
       "/images/instantfund/unnamed.jpg",
     ],
   },
+  18: {
+    gallery: [
+      "/images/cmyuva/Picture3.png",
+      "/images/cmyuva/Picture4.png",
+      "/images/cmyuva/Picture5.png",
+      "/images/cmyuva/Picture6.png",
+      "/images/cmyuva/Picture7.png",
+      "/images/cmyuva/Picture8.png",
+      "/images/cmyuva/Picture9.png",
+      "/images/cmyuva/Picture10.png",
+      "/images/cmyuva/Picture11.png"
+    ],
+  },
+  19: {
+    gallery: [
+      "/images/odop/Picture1.png",
+      "/images/odop/Picture2.png",
+      "/images/odop/Picture3.png",
+      "/images/odop/Picture4.png",
+      "/images/odop/Picture5.png",
+      "/images/odop/Picture6.png",
+    ],
+  },
   17: {
     reels: [
       "https://www.instagram.com/reel/DTP4OkeFe1z/?igsh=b3Eyc2JyNjBmeGg5",
