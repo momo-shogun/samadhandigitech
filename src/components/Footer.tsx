@@ -24,6 +24,7 @@ const footerLinks = {
     { name: "Digital Marketing", href: "/services#digital" },
     { name: "IT Services", href: "/services#it" },
     { name: "Studio Rental", href: "/services#studio" },
+    { name: "Branding", href: "/services#branding" },
   ],
   resources: [
     { name: "Blog", href: "/blog" },
@@ -34,11 +35,11 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Facebook, href: "https://www.facebook.com/samadhandigitech", label: "Facebook" },
+  { icon: Twitter, href: "https://twitter.com/samadhandigitech", label: "Twitter" },
+  { icon: Instagram, href: "https://www.instagram.com/samadhandigitech", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/samadhan-digitech", label: "LinkedIn" },
+  { icon: Youtube, href: "https://www.youtube.com/@samadhandigitech", label: "YouTube" },
 ];
 
 export function Footer() {
@@ -64,13 +65,10 @@ export function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-2">
-              <a
-                href="#"
-                className="flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
-              >
+              <div className="flex items-center gap-2 text-sm text-white/70">
                 <MapPin className="h-4 w-4 flex-shrink-0" />
                 <span>Delhi-NCR, India</span>
-              </a>
+              </div>
               <a
                 href="tel:+911234567890"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
@@ -155,6 +153,8 @@ export function Footer() {
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-9 h-9 rounded-full bg-white/10 text-white/70 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-colors"

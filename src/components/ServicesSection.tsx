@@ -12,6 +12,7 @@ const services = [
     description: "Corporate films, documentaries, ad films, animations, and post-production services.",
     href: "/services#media",
     color: "bg-[#3B82F6]", // Blue
+    hexColor: "#3B82F6",
     hoverColor: "group-hover:bg-[#2563EB]",
   },
   {
@@ -21,6 +22,7 @@ const services = [
     description: "SEO, social media, performance marketing, influencer campaigns, and analytics.",
     href: "/services#digital",
     color: "bg-[#A855F7]", // Purple
+    hexColor: "#A855F7",
     hoverColor: "group-hover:bg-[#9333EA]",
   },
   {
@@ -30,6 +32,7 @@ const services = [
     description: "Web & app development, custom software, cloud solutions, and AI/ML innovations.",
     href: "/services#it",
     color: "bg-[#EC4899]", // Bright Pink/Red
+    hexColor: "#EC4899",
     hoverColor: "group-hover:bg-[#DB2777]",
   },
   {
@@ -39,6 +42,7 @@ const services = [
     description: "Fully equipped studio with green screen, professional lighting, and crew support.",
     href: "/services#studio",
     color: "bg-[#10B981]", // Lime Green
+    hexColor: "#10B981",
     hoverColor: "group-hover:bg-[#059669]",
   },
   {
@@ -48,6 +52,7 @@ const services = [
     description: "Brand strategy, identity design, guidelines, naming, rebranding, and visual systems.",
     href: "/services#branding",
     color: "bg-[#F97316]", // Orange
+    hexColor: "#F97316",
     hoverColor: "group-hover:bg-[#EA580C]",
   },
 ];
@@ -107,35 +112,44 @@ export function ServicesSection() {
             >
               <Link
                 to={service.href}
-                className={`group flex flex-col md:flex-row md:items-center p-6 md:p-8 rounded-2xl ${service.color} hover:shadow-xl transition-all duration-300`}
+                className="group flex flex-col md:flex-row md:items-center p-6 md:p-8 rounded-2xl bg-white hover:shadow-xl transition-all duration-300"
+                style={{
+                  '--hover-bg-color': service.hexColor,
+                } as React.CSSProperties & { '--hover-bg-color': string }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = service.hexColor;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'white';
+                }}
               >
                 {/* Section 1: Number & Title */}
                 <div className="flex-1 flex items-start md:items-center gap-4 md:gap-6 mb-4 md:mb-0">
                   {/* Number */}
-                  <span className="text-sm font-mono text-white/80 flex-shrink-0">
+                  <span className="text-sm font-mono text-foreground/80 group-hover:text-white/80 flex-shrink-0 transition-colors">
                     {service.number}
                   </span>
                   
                   {/* Title & Subtitle */}
                   <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold text-white transition-colors">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold text-foreground group-hover:text-white transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-white/90 mt-1">{service.subtitle}</p>
+                    <p className="text-sm text-foreground/70 group-hover:text-white/90 mt-1 transition-colors">{service.subtitle}</p>
                   </div>
                 </div>
 
                 {/* Section 2: Description */}
                 <div className="flex-1 flex items-center mb-4 md:mb-0 px-0 md:px-4">
-                  <p className="text-white/80 text-sm text-left">
+                  <p className="text-foreground/70 group-hover:text-white/80 text-sm text-left transition-colors">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Section 3: Arrow */}
                 <div className="flex-1 flex items-center justify-start md:justify-end">
-                  <div className={`w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center transition-all duration-300 ${service.hoverColor} group-hover:border-white`}>
-                    <ArrowRight className="h-5 w-5 text-white transition-colors" />
+                  <div className={`w-12 h-12 rounded-full border-2 border-foreground/30 group-hover:border-white/30 flex items-center justify-center transition-all duration-300 ${service.hoverColor} group-hover:border-white`}>
+                    <ArrowRight className="h-5 w-5 text-foreground group-hover:text-white transition-colors" />
                   </div>
                 </div>
               </Link>

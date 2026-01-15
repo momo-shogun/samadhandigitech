@@ -191,11 +191,6 @@ function ClientLogoStrip() {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq1DkrDR_Z5GcjC6AJZs_ZHdksRu01ymAHg&s",
     },
     {
-      name: "NRDC",
-      image:
-        "https://nrdcindia.com/images/logo.png",
-    },
-    {
       name: "Burger Singh",
       image:
         "https://www.burgersinghonline.com/wp-content/themes/burger-singh/front/images/logo-v=0.1.png",
@@ -210,11 +205,7 @@ function ClientLogoStrip() {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTosBGBX15jP5DFLqy-z3S5BWnTCNyPjYhfSg&s",
     },
-    // {
-    //   name: "Ustraa",
-    //   image:
-    //     "https://images.yourstory.com/cs/images/companies/Ustraa-Logo-1627654883426.png",
-    // },
+    
     {
       name: "Ananda",
       image:
@@ -252,7 +243,7 @@ function ClientLogoStrip() {
             <img
               src={client.image}
               alt={client.name}
-              className="h-10 max-h-10 w-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition"
+              className="h-10 max-h-10 w-auto object-contain opacity-90 hover:opacity-100 transition hover:scale-110"
               draggable={false}
             />
           </div>

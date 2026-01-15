@@ -93,7 +93,7 @@ export function HeroSectionDemo2() {
             {/* <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl"> */}
               {/* Hero Image */}
               <img
-                src="/images/image-2.png"
+                src="/images/image-2.jpg"
                 alt="Samadhan Digitech Showreel"
                 className="w-full h-full object-cover"
               />
@@ -119,40 +119,82 @@ export function HeroSectionDemo2() {
 }
 
 function ClientLogoStrip() {
-  const clients = [
-    "Ministry of Rural Development",
-    "CSIR",
-    "Khadi India",
-    "DSIIDC",
-    "NRDC",
-    "Burger Singh",
-    "Bata",
-    "Jaipur Rugs",
-    "Ustraa",
-    "Ananda",
-    "Liberty Shoes",
-    "Theka Coffee",
+  const clientLogos = [
+    {
+      name: "Ministry of Rural Development",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/c/c8/Ministry_of_Rural_Development.png",
+    },
+    {
+      name: "CSIR",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/6/60/CSIR-Logo-With-Tagline-Seleceted-Bilingual.png",
+    },
+    {
+      name: "Khadi India",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DQU24PnoUGBEIkHj4StbbY7XHFe2snxJNw&s",
+    },
+    {
+      name: "DSIIDC",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq1DkrDR_Z5GcjC6AJZs_ZHdksRu01ymAHg&s",
+    },
+    {
+      name: "Burger Singh",
+      image:
+        "https://www.burgersinghonline.com/wp-content/themes/burger-singh/front/images/logo-v=0.1.png",
+    },
+    {
+      name: "Bata",
+      image:
+        "https://airiamall.com/wp-content/uploads/2023/08/Bata-Airia-Mall-Gurugram-Delhi.png",
+    },
+    {
+      name: "Jaipur Rugs",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTosBGBX15jP5DFLqy-z3S5BWnTCNyPjYhfSg&s",
+    },
+    {
+      name: "Ananda",
+      image:
+        "https://pbs.twimg.com/profile_images/1981281423433543680/E2YY12Tt_400x400.jpg",
+    },
+    {
+      name: "Liberty Shoes",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_QDVVcJUSnSFFty-bM9nWb5tT2ebhyWqrQw&s",
+    },
+    {
+      name: "Theka Coffee",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLByT-VsrFsAZS1G3xPHtgID6s5gEdzMIuw&s",
+    },
   ];
 
   return (
     <div className="relative overflow-hidden py-4 bg-muted/50">
       <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
       <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-      
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
         className="flex animate-marquee"
       >
-        {[...clients, ...clients].map((client, index) => (
+        {[...clientLogos, ...clientLogos].map((client, index) => (
           <div
             key={index}
-            className="flex-shrink-0 mx-8 flex items-center"
+            className="flex-shrink-0 mx-8 flex items-center justify-center"
+            style={{ minWidth: 96, minHeight: 48 }}
+            title={client.name}
           >
-            <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-              {client}
-            </span>
+            <img
+              src={client.image}
+              alt={client.name}
+              className="h-10 max-h-10 w-auto object-contain opacity-90 hover:opacity-100 transition hover:scale-110"
+              draggable={false}
+            />
           </div>
         ))}
       </motion.div>

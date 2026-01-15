@@ -101,14 +101,14 @@ const OurWork = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                     {/* Play Button */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <motion.div
                         whileHover={{ scale: 1.1 }}
                         className={`w-16 h-16 rounded-full ${project.color} flex items-center justify-center shadow-xl`}
                       >
                         <Play className="h-6 w-6 text-white ml-1" />
                       </motion.div>
-                    </div>
+                    </div> */}
 
                     {/* Badges */}
                     <div className="absolute top-4 left-4 flex gap-2">
