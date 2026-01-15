@@ -25,7 +25,7 @@ export function PortfolioSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="portfolio" className="py-24 bg-muted/30 relative overflow-hidden" ref={ref}>
+    <section id="portfolio" className="py-10 bg-muted/30 relative overflow-hidden" ref={ref}>
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
@@ -101,7 +101,7 @@ export function PortfolioSection() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* Overlay on hover */}
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-all duration-300" />

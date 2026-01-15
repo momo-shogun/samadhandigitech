@@ -11,8 +11,8 @@ const services = [
     subtitle: "For Brands & Government",
     description: "Corporate films, documentaries, ad films, animations, and post-production services.",
     href: "/services#media",
-    color: "bg-primary",
-    hoverColor: "group-hover:bg-primary",
+    color: "bg-[#3B82F6]", // Blue
+    hoverColor: "group-hover:bg-[#2563EB]",
   },
   {
     number: "02",
@@ -20,8 +20,8 @@ const services = [
     subtitle: "For Growth",
     description: "SEO, social media, performance marketing, influencer campaigns, and analytics.",
     href: "/services#digital",
-    color: "bg-accent",
-    hoverColor: "group-hover:bg-accent",
+    color: "bg-[#A855F7]", // Purple
+    hoverColor: "group-hover:bg-[#9333EA]",
   },
   {
     number: "03",
@@ -29,8 +29,8 @@ const services = [
     subtitle: "For Innovation",
     description: "Web & app development, custom software, cloud solutions, and AI/ML innovations.",
     href: "/services#it",
-    color: "bg-pink",
-    hoverColor: "group-hover:bg-pink",
+    color: "bg-[#EC4899]", // Bright Pink/Red
+    hoverColor: "group-hover:bg-[#DB2777]",
   },
   {
     number: "04",
@@ -38,8 +38,8 @@ const services = [
     subtitle: "For Creators",
     description: "Fully equipped studio with green screen, professional lighting, and crew support.",
     href: "/services#studio",
-    color: "bg-purple",
-    hoverColor: "group-hover:bg-purple",
+    color: "bg-[#10B981]", // Lime Green
+    hoverColor: "group-hover:bg-[#059669]",
   },
   {
     number: "05",
@@ -47,8 +47,8 @@ const services = [
     subtitle: "For Trust",
     description: "Brand strategy, identity design, guidelines, naming, rebranding, and visual systems.",
     href: "/services#branding",
-    color: "bg-highlight",
-    hoverColor: "group-hover:bg-highlight",
+    color: "bg-[#F97316]", // Orange
+    hoverColor: "group-hover:bg-[#EA580C]",
   },
 ];
 
@@ -57,7 +57,7 @@ export function ServicesSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-24 bg-background relative overflow-hidden" ref={ref}>
+    <section id="services" className="py-10 bg-background relative overflow-hidden" ref={ref}>
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -107,31 +107,36 @@ export function ServicesSection() {
             >
               <Link
                 to={service.href}
-                className="group flex flex-col md:flex-row md:items-center justify-between p-6 md:p-8 rounded-2xl border border-border bg-background hover:shadow-xl transition-all duration-300"
+                className={`group flex flex-col md:flex-row md:items-center p-6 md:p-8 rounded-2xl ${service.color} hover:shadow-xl transition-all duration-300`}
               >
-                <div className="flex items-start md:items-center gap-6 mb-4 md:mb-0">
+                {/* Section 1: Number & Title */}
+                <div className="flex-1 flex items-start md:items-center gap-4 md:gap-6 mb-4 md:mb-0">
                   {/* Number */}
-                  <span className="text-sm font-mono text-muted-foreground">
+                  <span className="text-sm font-mono text-white/80 flex-shrink-0">
                     {service.number}
                   </span>
                   
                   {/* Title & Subtitle */}
-                  <div>
-                    <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold text-white transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground">{service.subtitle}</p>
+                    <p className="text-sm text-white/90 mt-1">{service.subtitle}</p>
                   </div>
                 </div>
 
-                {/* Description (Hidden on mobile) */}
-                <p className="hidden lg:block text-muted-foreground max-w-md text-sm flex-1 mx-8">
-                  {service.description}
-                </p>
+                {/* Section 2: Description */}
+                <div className="flex-1 flex items-center mb-4 md:mb-0 px-0 md:px-4">
+                  <p className="text-white/80 text-sm text-left">
+                    {service.description}
+                  </p>
+                </div>
 
-                {/* Arrow */}
-                <div className={`w-12 h-12 rounded-full border border-border flex items-center justify-center transition-all duration-300 ${service.hoverColor} group-hover:border-transparent`}>
-                  <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-white transition-colors" />
+                {/* Section 3: Arrow */}
+                <div className="flex-1 flex items-center justify-start md:justify-end">
+                  <div className={`w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center transition-all duration-300 ${service.hoverColor} group-hover:border-white`}>
+                    <ArrowRight className="h-5 w-5 text-white transition-colors" />
+                  </div>
                 </div>
               </Link>
             </motion.div>

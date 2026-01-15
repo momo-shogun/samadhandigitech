@@ -48,13 +48,13 @@ export function Navbar() {
         }`}
       >
         <nav className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-24">
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
                 src="/favicon.png" 
                 alt="Samadhan Digitech Logo" 
-                className="h-20 w-20 md:h-24 md:w-24 object-contain"
+                className="h-32 w-32 md:h-40 md:w-40 object-contain"
               />
             </Link>
 
@@ -131,7 +131,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-background pt-20 md:hidden"
+            className="fixed inset-0 z-40 bg-background pt-24 md:hidden"
           >
             <div className="container mx-auto px-4 py-8">
               <div className="flex flex-col gap-6">
