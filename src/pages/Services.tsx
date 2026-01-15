@@ -24,7 +24,7 @@ const services = [
       "OTT Shows & Web Content",
       "Post-Production & VFX",
     ],
-    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
+    image: "/images/about/media.jpg",
     color: "bg-primary",
     textColor: "text-primary",
     bgColor: "bg-primary/5",
@@ -44,7 +44,7 @@ const services = [
       "Social Media Marketing",
       "Influencer Campaigns",
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    image: "/images/about/digital.JPG",
     color: "bg-accent",
     textColor: "text-accent",
     bgColor: "bg-accent/5",
@@ -84,7 +84,7 @@ const services = [
       "Live Streaming & Podcast Setup",
       "Props, Set Design & Makeup Room",
     ],
-    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop",
+    image: "/images/about/studio.png",
     color: "bg-pink",
     textColor: "text-pink",
     bgColor: "bg-pink/5",
@@ -104,7 +104,7 @@ const services = [
       "Rebranding & Brand Refresh",
       "Packaging & Visual Systems",
     ],
-    image: "https://images.unsplash.com/photo-1661956600684-97d3a4320e45?q=80&w=1170&auto=format&fit=crop",
+    image: "/images/about/branding.png",
     color: "bg-highlight",
     textColor: "text-highlight",
     bgColor: "bg-highlight/5",
@@ -202,7 +202,7 @@ const Services = () => {
                       <img
                         src={service.image}
                         alt={service.title}
-                        className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <motion.div

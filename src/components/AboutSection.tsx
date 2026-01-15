@@ -124,7 +124,7 @@ export function AboutSection() {
               <div className="col-span-2">
                 <div className="aspect-video rounded-2xl overflow-hidden bg-foreground shadow-xl">
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
+                    src="/public/images/about/3.jpg"
                     alt="Team collaboration"
                     className="w-full h-full object-cover"
                   />
@@ -134,14 +134,14 @@ export function AboutSection() {
               {/* Bottom Images */}
               <div className="aspect-square rounded-2xl overflow-hidden bg-primary shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop"
+                  src="/public/images/about/2.jpg"
                   alt="Digital marketing"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-square rounded-2xl overflow-hidden bg-accent shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=300&h=300&fit=crop"
+                  src="/public/images/about/1.png"
                   alt="Film production"
                   className="w-full h-full object-cover"
                 />

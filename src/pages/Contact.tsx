@@ -23,19 +23,19 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["123 Tech Park, Innovation City", "India - 110001"],
+    details: ["Samadhan Tower 27/1/B Gokhale Marg", "Lucknow – 226001"],
     color: "bg-primary",
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 1234 567 890", "+91 9876 543 210"],
+    details: ["+91 7607655555"],
     color: "bg-accent",
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["contact@samadhandigitech.com", "hello@samadhandigitech.com"],
+    details: ["contact@samadhan.group"],
     color: "bg-purple",
   },
   {
@@ -270,15 +270,28 @@ const Contact = () => {
                 transition={{ duration: 0.6 }}
                 className="space-y-8"
               >
-                {/* Map Placeholder */}
-                <div className="rounded-2xl overflow-hidden border border-border shadow-lg h-[300px] bg-muted flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <h3 className="font-display font-bold text-foreground mb-2">Our Location</h3>
-                    <p className="text-muted-foreground text-sm">
-                      123 Tech Park, Innovation City<br />
-                      India - 110001
-                    </p>
+                {/* Google Map */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+                      <MapPin className="h-5 w-5 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="font-display font-bold text-foreground">Our Location</h3>
+                      <p className="text-sm text-muted-foreground">Samadhan Tower, Lucknow</p>
+                    </div>
+                  </div>
+                  <div className="rounded-2xl overflow-hidden border border-border shadow-lg h-[200px]">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.234567890123!2d80.94567890000001!3d26.8467890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUwJzQ4LjQiTiA4MMKwNTYnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Samadhan Digitech Location"
+                    ></iframe>
                   </div>
                 </div>
 

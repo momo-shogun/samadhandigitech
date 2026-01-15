@@ -94,11 +94,11 @@ export function CTASection() {
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 rounded-full bg-primary" />
-                    <span>contact@samadhandigitech.com</span>
+                    <span>contact@samadhan.group</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 rounded-full bg-pink" />
-                    <span>Delhi-NCR, India</span>
+                    <span>+91 7607655555</span>
                   </div>
                 </div>
 

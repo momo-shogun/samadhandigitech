@@ -65,23 +65,23 @@ export function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <MapPin className="h-4 w-4 flex-shrink-0" />
-                <span>Delhi-NCR, India</span>
+              <div className="flex items-start gap-2 text-sm text-white/70">
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />
+                <span>Samadhan Tower 27/1/B Gokhale Marg, Lucknow – 226001</span>
               </div>
               <a
-                href="tel:+911234567890"
+                href="tel:+917607655555"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
               >
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+91 1234 567 890</span>
+                <span>+91 7607655555</span>
               </a>
               <a
-                href="mailto:contact@samadhandigitech.com"
+                href="mailto:contact@samadhan.group"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
               >
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>contact@samadhandigitech.com</span>
+                <span>contact@samadhan.group</span>
               </a>
             </div>
           </div>
