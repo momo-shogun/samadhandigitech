@@ -124,7 +124,7 @@ export function AboutSection() {
               <div className="col-span-2">
                 <div className="aspect-video rounded-2xl overflow-hidden bg-foreground shadow-xl">
                   <img
-                    src="/images/about/3.jpg"
+                    src="/images/about/3.JPG"
                     alt="Team collaboration"
                     className="w-full h-full object-cover"
                   />
@@ -134,7 +134,7 @@ export function AboutSection() {
               {/* Bottom Images */}
               <div className="aspect-square rounded-2xl overflow-hidden bg-primary shadow-lg">
                 <img
-                  src="/images/about/2.jpg"
+                  src="/images/about/2.JPG"
                   alt="Digital marketing"
                   className="w-full h-full object-cover"
                 />
