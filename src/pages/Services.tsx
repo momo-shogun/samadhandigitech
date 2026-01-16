@@ -64,7 +64,7 @@ const services = [
       "UI/UX Design & Development",
       "AI/ML Solutions & Data Analytics",
     ],
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+    image: "/images/about/it.jpg",
     color: "bg-purple",
     textColor: "text-purple",
     bgColor: "bg-purple/5",
