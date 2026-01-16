@@ -16,9 +16,9 @@ export function HeroSectionDemo2() {
               transition={{ duration: 0.6 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground leading-[1.1] tracking-tight"
             >  
-              We Turn{" "}
-              <span className="italic font-normal">Scrolls</span>{" "}
-              Into Sales
+              Built to {" "}
+              <span className="italic font-normal">Scale </span>{" "}
+              Your Business
             </motion.h1>
 
             <motion.p
@@ -27,25 +27,17 @@ export function HeroSectionDemo2() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-6 text-lg text-muted-foreground max-w-xl"
             >
-              We help brands grow online by combining performance-driven digital marketing, conversion-focused websites, and high-quality content production.
-              <br />
-              <br />
-              <span className="text-foreground font-semibold">
-                Attract. Convert. Grow.
-              </span>
+              We power everything marketing, across SEO, advertising, branding, and strategy, so your business reaches the right customers, increases sales, and scales revenue without the stress.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-8 flex flex-col sm:flex-row gap-4"
+              className="mt-4 flex flex-col sm:flex-row gap-4"
             >
               <Button asChild size="lg" className="rounded-full bg-foreground text-background hover:bg-foreground/90 px-8">
                 <Link to="/contact">Book A Call</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full border-2 border-foreground/20 hover:border-foreground/40 px-8">
-                <Link to="/our-work">Our Work</Link>
               </Button>
             </motion.div>
 
@@ -185,16 +177,17 @@ function ClientLogoStrip() {
         {[...clientLogos, ...clientLogos].map((client, index) => (
           <div
             key={index}
-            className="flex-shrink-0 mx-8 flex items-center justify-center"
-            style={{ minWidth: 96, minHeight: 48 }}
+            className="flex-shrink-0 mx-6 flex items-center justify-center"
             title={client.name}
           >
-            <img
-              src={client.image}
-              alt={client.name}
-              className="h-10 max-h-10 w-auto object-contain opacity-90 hover:opacity-100 transition hover:scale-110"
-              draggable={false}
-            />
+            <div className="w-32 h-16 flex items-center justify-center">
+              <img
+                src={client.image}
+                alt={client.name}
+                className="max-w-full max-h-full object-contain opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                draggable={false}
+              />
+            </div>
           </div>
         ))}
       </motion.div>

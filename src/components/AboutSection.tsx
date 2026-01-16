@@ -64,7 +64,7 @@ export function AboutSection() {
             >
               In today's digital-first world, every organization needs a partner who blends
               technology, creativity, and strategy to make an impact. Founded in 2017 as part
-              of the Samadhan Group, we've evolved over 9 years into a leading creative-tech agency.
+              of the Samadhan Group, we've evolved over 10 years into a leading creative-tech agency.
             </motion.p>
 
             <motion.div
@@ -134,7 +134,7 @@ export function AboutSection() {
               {/* Bottom Images */}
               <div className="aspect-square rounded-2xl overflow-hidden bg-primary shadow-lg">
                 <img
-                  src="/images/about/2.JPG"
+                  src="/images/about/2.jpg"
                   alt="Digital marketing"
                   className="w-full h-full object-cover"
                 />
@@ -157,7 +157,7 @@ export function AboutSection() {
             >
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-display font-bold text-xl">9+</span>
+                  <span className="text-primary-foreground font-display font-bold text-xl">10+</span>
                 </div>
                 <div>
                   <p className="font-display font-bold text-foreground">Years</p>

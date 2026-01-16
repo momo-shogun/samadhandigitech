@@ -236,16 +236,17 @@ function ClientLogoStrip() {
         {[...clientLogos, ...clientLogos].map((client, index) => (
           <div
             key={index}
-            className="flex-shrink-0 mx-8 flex items-center justify-center"
-            style={{ minWidth: 96, minHeight: 48 }}
+            className="flex-shrink-0 mx-6 flex items-center justify-center"
             title={client.name}
           >
-            <img
-              src={client.image}
-              alt={client.name}
-              className="h-10 max-h-10 w-auto object-contain opacity-90 hover:opacity-100 transition hover:scale-110"
-              draggable={false}
-            />
+            <div className="w-32 h-16 flex items-center justify-center">
+              <img
+                src={client.image}
+                alt={client.name}
+                className="max-w-full max-h-full object-contain opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                draggable={false}
+              />
+            </div>
           </div>
         ))}
       </motion.div>

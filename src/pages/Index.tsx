@@ -17,11 +17,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        {heroVariant === "demo2" ? <HeroSectionDemo2 /> : <HeroSection />}
+        {/* {heroVariant === "demo2" ? <HeroSectionDemo2 /> : <HeroSection />} */}
+        <HeroSectionDemo2 />
         {/* <WhatBringsYouSection /> */}
-        <AboutSection />
         <ServicesSection />
         <PortfolioSection />
+        <AboutSection />
         <ClientsSection />
         <CTASection />
       </main>

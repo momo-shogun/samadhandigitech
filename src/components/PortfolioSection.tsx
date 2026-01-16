@@ -18,7 +18,7 @@ const sortedProjects = [...allProjects].sort((a, b) => {
 });
 
 // Get featured projects (prioritized ones first, up to 8 projects)
-const projects = sortedProjects.slice(0, 8);
+const projects = sortedProjects.slice(0, 9);
 
 export function PortfolioSection() {
   const ref = useRef(null);
